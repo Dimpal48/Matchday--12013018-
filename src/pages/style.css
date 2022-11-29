@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.fixtures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.fixture-card-cover {
+  margin: 20px 0;
+}
+.field-cover{
+  display: flex;
+  margin-top: 30px;
+  justify-content: right;
+  margin-right: 40px;
+  width: 100%;
+}
+.container {
+    text-align: center;
+    margin: 30px 20px;
+}
+.fixture-card-link{
+  padding: 0px 30px;
+}
+.input-field {
+  display: flex;
+  border: 1.85px #e0e1e3 solid;
+  border-radius: 7px;
+  height: min-content;
+  align-items: center;
+  padding: 2px 5px;
+}
+input:focus {
+  outline: none;
+}
+input {
+  border: 0;
+  width: 400px;
+  height: 30px;
+}
+.input-field > img {
+display: block;
+  width: 22px;
+  margin: 3px;
+  margin-right:8px;
+  height: 22px;
+}
+
+.videoControls{
+  width: 150px;
+  height: 40px;
+  border: 2px solid black;
+  margin: 20px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.videoControls:hover{
+  background-color: black;
+  color: white;
+}
+
+.panel{
+  background-color: #eceff8;
+  width: 95%;
+  height: 50px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.panel_text{
+  color: #23294b;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  height: 100%;
+  margin: auto;
+  border-bottom: 2px solid #23294b;
+  line-height: 50px;
+}
+
+#video{
+  box-shadow: 0px 0px 5px 0px gray;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#loader-container{
+  text-align:center;
+  padding:20px;
+  height:100px;
+  vertical-align: center;
+}
+
+.loader{
+  display:inline-block;
+  width:15px;
+  height:60px;
+  background:#23294b;
+}
+@keyframes move {
+  0%   {height:20px;}
+  50%  {height:10px;}
+  100% {height:20px;}
+}
+
+@keyframes move2 {
+  0%   {height:10px;}
+  50%  {height:20px;}
+  100% {height:10px;}
+}
+#loader-one{
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+#loader-two{
+  animation-name: move2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+#loader-three{
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
